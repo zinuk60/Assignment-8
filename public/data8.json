@@ -1,0 +1,146 @@
+  [
+  {
+    "image": "https://surl.li/vszwwo",
+    "title": "NotePlus AI",
+    "companyName": "Scribe Systems",
+    "id": 113,
+    "description": "Handwriting recognition and automatic summarization for students.",
+    "size": 88,
+    "reviews": 310,
+    "ratingAvg": 4.0,
+    "downloads": 40000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 50 },
+      { "name": "4 star", "count": 100 },
+      { "name": "5 star", "count": 100 }
+    ]
+  },
+  {
+    "image": "https://surl.li/urjjxa",
+    "title": "FocusBeats",
+    "companyName": "AudioGenic",
+    "id": 114,
+    "description": "Generative lo-fi beats designed to help you study and work longer.",
+    "size": 130,
+    "reviews": 2700,
+    "ratingAvg": 4.6,
+    "downloads": 950000,
+    "ratings": [
+      { "name": "1 star", "count": 50 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 800 },
+      { "name": "5 star", "count": 1600 }
+    ]
+  },
+  {
+    "image": "https://surl.li/yvceao",
+    "title": "EcoScan",
+    "companyName": "GreenFuture",
+    "id": 115,
+    "description": "Scan barcodes to see the environmental impact of your favorite products.",
+    "size": 42,
+    "reviews": 180,
+    "ratingAvg": 3.5,
+    "downloads": 10000,
+    "ratings": [
+      { "name": "1 star", "count": 30 },
+      { "name": "2 star", "count": 20 },
+      { "name": "3 star", "count": 40 },
+      { "name": "4 star", "count": 50 },
+      { "name": "5 star", "count": 40 }
+    ]
+  },
+  {
+    "image": "https://surl.lu/xxenzr",
+    "title": "StockAlert",
+    "companyName": "MarketPros",
+    "id": 116,
+    "description": "Get instant notifications for stock price breakouts and news.",
+    "size": 25,
+    "reviews": 1350,
+    "ratingAvg": 4.2,
+    "downloads": 250000,
+    "ratings": [
+      { "name": "1 star", "count": 100 },
+      { "name": "2 star", "count": 100 },
+      { "name": "3 star", "count": 200 },
+      { "name": "4 star", "count": 450 },
+      { "name": "5 star", "count": 500 }
+    ]
+  },
+  {
+    "image": "https://surl.li/buvwlv",
+    "title": "VividDraw",
+    "companyName": "ArtStation Studio",
+    "id": 117,
+    "description": "A powerful vector drawing app for tablets with full layer support.",
+    "size": 280,
+    "reviews": 640,
+    "ratingAvg": 4.4,
+    "downloads": 150000,
+    "ratings": [
+      { "name": "1 star", "count": 20 },
+      { "name": "2 star", "count": 40 },
+      { "name": "3 star", "count": 80 },
+      { "name": "4 star", "count": 200 },
+      { "name": "5 star", "count": 300 }
+    ]
+  },
+  {
+    "image": "https://surl.li/erolbx",
+    "title": "GameLink",
+    "companyName": "Nexus Gaming",
+    "id": 118,
+    "description": "Find teammates and join competitive tournaments for mobile esports.",
+    "size": 160,
+    "reviews": 3800,
+    "ratingAvg": 4.3,
+    "downloads": 2000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 300 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 1200 },
+      { "name": "5 star", "count": 1500 }
+    ]
+  },
+  {
+    "image": "https://surl.li/mlngsp",
+    "title": "WeatherCast HD",
+    "companyName": "MeteoGroup",
+    "id": 119,
+    "description": "Hyper-local weather forecasts with interactive radar and storm alerts.",
+    "size": 52,
+    "reviews": 9200,
+    "ratingAvg": 4.7,
+    "downloads": 10000000,
+    "ratings": [
+      { "name": "1 star", "count": 200 },
+      { "name": "2 star", "count": 400 },
+      { "name": "3 star", "count": 600 },
+      { "name": "4 star", "count": 2000 },
+      { "name": "5 star", "count": 6000 }
+    ]
+  },
+  {
+    "image": "https://surl.li/ckjykg",
+    "title": "DriveMate",
+    "companyName": "AutoTech Hub",
+    "id": 120,
+    "description": "Track mileage, fuel consumption, and service intervals for your car.",
+    "size": 38,
+    "reviews": 510,
+    "ratingAvg": 4.1,
+    "downloads": 75000,
+    "ratings": [
+      { "name": "1 star", "count": 40 },
+      { "name": "2 star", "count": 50 },
+      { "name": "3 star", "count": 70 },
+      { "name": "4 star", "count": 150 },
+      { "name": "5 star", "count": 200 }
+    ]
+  }
+]
