@@ -4,15 +4,21 @@ import { FaStar } from 'react-icons/fa';
 import { FiDownload } from 'react-icons/fi';
 import { useLoaderData, useParams } from 'react-router';
 import { Bar, BarChart, XAxis, YAxis } from 'recharts';
+import { addData, getData } from '../common/DB';
 
 const AppDetails = () => {
-  
-    const appData=useLoaderData();
 
+    const appData=useLoaderData();
+ 
     const {id}=useParams();
   const findData=appData.find(app=>id==app.id)
 
-
+  const handleInstall=()=>{
+    
+   addData(findData.id)
+   
+   
+  }
  
 
 
@@ -44,7 +50,8 @@ const AppDetails = () => {
                 </div>
                
             </div>
-            <button className='btn bg-green-500 text-white mb-20 '>Install Now [{findData.size} MB]</button>
+            <button className={`btn bg-green-500 text-white mb-20 ${getData().includes(findData.id)?"cursor-not-allowed disabled:opacity-0":''}` } onClick={handleInstall}>{getData().includes(findData.id) ?  'installed':`Install Now (${findData.size} MB)`}</button>
+    
             </div>
 </div>
       
