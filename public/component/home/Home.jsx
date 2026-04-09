@@ -4,9 +4,8 @@ import App8 from "./app8";
 import { Link } from "react-router";
 
 
-function Home() {
-  const apps =fetch('data8.json')
-  .then(response => response.json());
+function Home({apps8}) {
+
   
 
   return (
@@ -20,9 +19,9 @@ function Home() {
       </p>
       <p className="text-[#627382] text-[20px] mt-5">Explore All Trending Apps on the Market developed by us</p>
       <div>
-    <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
-      <App8 apps={apps}></App8>
-    </Suspense>
+    
+      <App8 apps8={apps8}></App8>
+    
           
       </div>
     </div>

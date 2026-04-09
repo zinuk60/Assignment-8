@@ -1,9 +1,8 @@
 import React, { Suspense } from 'react';
 import AllApp from './allApp';
 
-const Apps = () => {
-    const apps=fetch('data.json')
-               .then(response=>response.json());
+const Apps = ({apps}) => {
+
     return (
       <div className="bg-[#F5F5F5]">
     
@@ -14,9 +13,9 @@ const Apps = () => {
       </p>
       <p className="text-[#627382] text-[20px] mt-5">Explore All Apps on the Market developed by us. We code for Millions</p>
       <div>
-    <Suspense fallback={<span className="loading loading-dots loading-xl"></span>}>
+    
       <AllApp apps={apps}></AllApp>
-    </Suspense>
+
           
       </div>
     </div>
