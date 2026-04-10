@@ -11,7 +11,7 @@ const Apps = ({apps}) => {
        Our All Applications
           
       </p>
-      <p className="text-[#627382] text-[20px] mt-5">Explore All Apps on the Market developed by us. We code for Millions</p>
+      <p className="text-[#627382] text-[18px] mt-5">Explore All Apps on the Market developed by us. We code for Millions</p>
       <div>
     
       <AllApp apps={apps}></AllApp>

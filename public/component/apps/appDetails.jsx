@@ -2,13 +2,14 @@
 import { BiSolidLike } from 'react-icons/bi';
 import { FaStar } from 'react-icons/fa';
 import { FiDownload } from 'react-icons/fi';
-import { useLoaderData, useParams } from 'react-router';
+import {  useLoaderData, useParams } from 'react-router';
 import { Bar, BarChart, XAxis, YAxis } from 'recharts';
 import { addData, getData } from '../common/DB';
 
 const AppDetails = () => {
 
     const appData=useLoaderData();
+    
  
     const {id}=useParams();
   const findData=appData.find(app=>id==app.id)
@@ -50,8 +51,10 @@ const AppDetails = () => {
                 </div>
                
             </div>
-            <button className={`btn bg-green-500 text-white mb-20 ${getData().includes(findData.id)?"cursor-not-allowed disabled:opacity-0":''}` } onClick={handleInstall}>{getData().includes(findData.id) ?  'installed':`Install Now (${findData.size} MB)`}</button>
+         <form action="">
+               <button className={`btn bg-green-500 text-white mb-20 ${getData().includes(findData.id)?"cursor-not-allowed disabled:opacity-0":''}` } onClick={handleInstall}>{getData().includes(findData.id) ?  'installed':`Install Now (${findData.size} MB)`}</button>
     
+         </form>
             </div>
 </div>
       
@@ -66,6 +69,7 @@ const AppDetails = () => {
        <div>
         <p className='font-bold font-black text-2xl mt-10'>Description</p>
         <p className='mt-3 p-10 text-gray-600'>{findData.description}</p>
+   
        </div>
         </div>
     );
