@@ -24,7 +24,7 @@ const Navber = () => {
       <li><NavLink to={'/installation'}>Installation</NavLink></li>
       </ul>
     </div>
-    <a className="btn-ghost text-xl flex justify-center items-center md:ml-10" href='/'><img className='h-[50px] w-[50px]' src={image} alt="" /> <span className='gradient '>Hero.Io</span></a>
+    <a className="btn-ghost text-xl flex justify-center items-center md:ml-10" href='/'><img className='h-[50px] w-[50px]' src={image} alt="" /> <span className='gradient '>AppZone.Io</span></a>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -36,7 +36,8 @@ const Navber = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white md:mr-10"> <FaGithub></FaGithub> Contribute</a>
+    
+    <a href='https://github.com/zinuk60' className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white md:mr-10"> <FaGithub></FaGithub> Contribute</a>
   </div>
 </div>
 

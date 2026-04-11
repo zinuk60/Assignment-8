@@ -1,6 +1,7 @@
 import React, { use } from 'react';
 import { FaStar } from 'react-icons/fa';
 import { MdOutlineFileDownload } from 'react-icons/md';
+import { Link } from 'react-router';
 
 const App8 = ({ apps8 }) => {
   const appData=use(apps8)
@@ -10,6 +11,7 @@ const App8 = ({ apps8 }) => {
         <div className='grid grid-cols-1 md:grid-cols-4 gap-20 mt-20 mb-20  '>
       {
         appData.map(app=> 
+          <Link to={`/apps/details/${app.id}`}>
              <div key={app.id} className="h-[400px] w-[300px] bg-white p-5 shadow-2xl">
                  <div className=''>
             <img className='mx-auto max-h-[200] max-w-[200px]' src={app.image} alt="" />
@@ -20,6 +22,7 @@ const App8 = ({ apps8 }) => {
             <span className='flex gap-3 pl-3 pr-3 rounded-md text-[#FF8811] bg-[#FFF0E1] justify-center items-center'> <FaStar></FaStar> {app.ratingAvg}</span>
             </div>
         </div>
+          </Link>
         )
       }
         </div>

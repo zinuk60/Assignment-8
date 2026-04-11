@@ -27,7 +27,7 @@ const PageNotFound = () => {
                   <li><NavLink to={'/installation'}>Installation</NavLink></li>
                   </ul>
                 </div>
-                <a className="btn-ghost text-xl flex justify-center items-center md:ml-10" href='/'><img className='h-[50px] w-[50px]' src={image} alt="" /> <span className='gradient '>Hero.Io</span></a>
+                <a className="btn-ghost text-xl flex justify-center items-center md:ml-10" href='/'><img className='h-[50px] w-[50px]' src={image} alt="" /> <span className='gradient '>AppZone.Io</span></a>
               </div>
               <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -39,7 +39,7 @@ const PageNotFound = () => {
                 </ul>
               </div>
               <div className="navbar-end">
-                <a className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white md:mr-10"> <FaGithub></FaGithub> Contribute</a>
+                <a href='https://github.com/zinuk60' className="btn bg-gradient-to-r from-[#632EE3] to-[#9F62F2] text-white md:mr-10"> <FaGithub></FaGithub> Contribute</a>
               </div>
             </div>
 
@@ -58,7 +58,7 @@ const PageNotFound = () => {
          <div className='max-h-[500px] max-w-full bg-[#001931] text-white '>
            <div className='flex flex-col md:flex-row justify-between items-center '>
             <div>
-            <a className="btn-ghost text-xl flex justify-center items-center mb-10 md:ml-10" href='/'><img className='h-[50px] w-[50px]' src={image} alt="" /> <span className='font-bold'>Hero.Io</span></a>
+            <a className="btn-ghost text-xl flex justify-center items-center mb-10 md:ml-10" href='/'><img className='h-[50px] w-[50px]' src={image} alt="" /> <span className='font-bold'>AppZone.Io</span></a>
             </div>
             <div className='flex gap-5 text-2xl  '>
                 <Link className='hover:text-amber-100'>about </Link>

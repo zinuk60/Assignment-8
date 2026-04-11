@@ -19,11 +19,11 @@ const Installation = () => {
         const storedData=getData();
         const filterData=appData.filter(app=>storedData.includes(app.id));
         let sortData;
-        if(sort==='size'){
-          sortData=filterData.sort((a,b)=>(a.size-b.size))
+        if(sort==='low-high'){
+          sortData=filterData.sort((a,b)=>(a.downloads-b.downloads))
 
-        }else if(sort==='rating'){
-          sortData=filterData.sort((a,b)=>(b.ratingAvg-a.ratingAvg))
+        }else if(sort==='high-low'){
+          sortData=filterData.sort((a,b)=>(b.downloads-a.downloads))
         }else{
           return filterData
         }
@@ -43,10 +43,10 @@ const Installation = () => {
       <div className='flex flex-col md:flex-row justify-between items-center mt-20 gap-10 max-w-[800px] mx-auto'>
        <p  className='font-bold text-2xl '>({filterApp().length})Apps Found</p>
       <div className="dropdown">
-   <div tabIndex={0} role="button" className="btn m-1">Sort by: {sort==='size'?'Size':''} {sort==='rating'?'Rating':''}</div>
+   <div tabIndex={0} role="button" className="btn m-1">Sort by: {sort==='low-high'?'Low-High':''} {sort==='high-low'?'High-Low':''}</div>
    <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
-     <li onClick={()=>handleSort('size')}><a>Size</a></li>
-     <li onClick={()=>handleSort('rating')}><a>Ratting</a></li>
+     <li onClick={()=>handleSort('low-high')}><a>Low-High</a></li>
+     <li onClick={()=>handleSort('high-low')}><a>High-Low</a></li>
    </ul>
   </div>
         </div>

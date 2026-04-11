@@ -15,18 +15,18 @@ const Banner = () => {
            <p className='mt-5 text-[#627382] pl-10 pr-10'>At HERO.IO, we craft innovative apps designed to make everyday life simpler, smarter, and   more exciting. </p>
            <p className='text-[#627382] pl-10 pr-10'> Our goal is to turn your ideas into digital experiences that truly make an impact.</p>
             <p className='flex mt-10 gap-5 mb-5'>
-             <Link to={'/apps'}>
+             <a href='https://play.google.com/store/apps'>
                 <span className='h-[50px] w-[170px] btn flex  items-center gap-1 '>
                      <img className='h-[45px] w-[50px]' src={playStore} alt="" /> 
                Google Play 
                 </span>
-             </Link>
+             </a>
 
-             <Link to={'/apps'}>
+             <a href='https://www.apple.com/app-store/'>
                 <span className='h-[50px] w-[150px] btn flex items-center gap-2 p-0 '>
                 <img className='h-[45px] w-[50px] ml-0' src={appStore} alt="" />  
                 App Store </span>
-             </Link>
+             </a>
                 </p>
            </div>
            <div> <img className='h-[150px] w-[300px] md:h-[350px] md:w-[700px] ' src={hero} alt="" /></div>
