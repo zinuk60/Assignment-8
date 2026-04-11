@@ -22,7 +22,7 @@ const Installation = () => {
         if(sort==='size'){
           sortData=filterData.sort((a,b)=>(a.size-b.size))
 
-        }else if(sort==='ratting'){
+        }else if(sort==='rating'){
           sortData=filterData.sort((a,b)=>(b.ratingAvg-a.ratingAvg))
         }else{
           return filterData
@@ -43,10 +43,10 @@ const Installation = () => {
       <div className='flex flex-col md:flex-row justify-between items-center mt-20 gap-10 max-w-[800px] mx-auto'>
        <p  className='font-bold text-2xl '>({filterApp().length})Apps Found</p>
       <div className="dropdown">
-   <div tabIndex={0} role="button" className="btn m-1">Sort by: {sort==='ratting'?'Ratting':'Size'}</div>
+   <div tabIndex={0} role="button" className="btn m-1">Sort by: {sort==='size'?'Size':''} {sort==='rating'?'Rating':''}</div>
    <ul tabIndex="-1" className="dropdown-content menu bg-base-100 rounded-box z-1 w-52 p-2 shadow-sm">
      <li onClick={()=>handleSort('size')}><a>Size</a></li>
-     <li onClick={()=>handleSort('ratting')}><a>Ratting</a></li>
+     <li onClick={()=>handleSort('rating')}><a>Ratting</a></li>
    </ul>
   </div>
         </div>

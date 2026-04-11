@@ -14,27 +14,38 @@ const AllApp = ({apps}) => {
    }        
    const filterApps=()=>{
     let filterData=[];
+    
     if(search.length!=0){
     filterData=allAppData.filter(app=>search.toLowerCase().includes(app.title.slice(0,search.length).toLowerCase()))
+  
    }else{
     filterData=[...allAppData]
    }
    return filterData;
   }
 
+  let display;
+  if(search.length !=0 && filterApps().length==0 ){
+    display=<>
+        <div className='flex justify-center items-center'>
+          <h1 className='mt-20 font-extrabold text-4xl text-blue-950'>apps not found</h1>
+        </div>
+    </>
+  }
+ 
   
     return (
-   <div>
-
-     <div className='flex flex-col md:flex-row justify-between items-center mt-20 gap-10'>
+    <div>
+     
+     <div className=' flex flex-col md:flex-row justify-between items-center mt-20 gap-10'>
    <p  className='font-bold text-2xl '>({filterApps().length})Apps Found</p>
-   <div className='flex justify-center  items-center  border-1 border-gray-400   w-[400px] h-[40px] text-2xl text-black '>
+   <div className='flex justify-center  items-center  border-1 border-gray-400   max-w-[400px] h-[40px] text-2xl text-black '>
        <span>  <CiSearch></CiSearch></span>
          <input type="text" className=' focus:outline-none ' onChange={handleChange} placeholder='Search apps.........'/>
    </div>
     
     </div>
-
+      {display}
      <div className='grid grid-cols-1 md:grid-cols-4 gap-20 mt-5 mb-20  '>
       {  
               filterApps().map(app=> 

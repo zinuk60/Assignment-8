@@ -15,15 +15,15 @@ const InstalledApp = ({app}) => {
     
          }
     return (
-            <div className='flex justify-between items-center h-[80px] max-w-[800px] mx-auto bg-white mt-5' >
-                <div className='flex'>
+            <div className='flex flex-col md:flex-row justify-between items-center p-5 max-h-[800px]  max-w-[800px] mx-auto bg-white mt-5' >
+                <div className='flex flex-col md:flex-row justify-center items-center'>
                     <div>
-                        <img className='h-[50px] w-[50px] ml-3' src={app.image} alt="" />
+                        <img className='h-[50px] w-[50px] md:ml-3' src={app.image} alt="" />
                     </div>
                      
                     <div className='ml-5'>
-                     <p className=''>{app.title}:{app.workOn}</p>
-                     <div className='flex gap-10'>
+                     <p className='mt-3 md:mt-0'>{app.title}:{app.workOn}</p>
+                     <div className='flex gap-10 mt-3 md:mt-1'>
                         <span className='text-[12px] text-green-500 mt-2 flex items-center gap-1'><FiDownload></FiDownload> {app.downloads}</span>
                         <span className='text-[12px] text-orange-500 mt-2 flex items-center gap-1'><FaStar></FaStar> {app.ratingAvg}</span>
                         <span className='text-[12px] mt-2 '> {app.size} MB</span>
@@ -32,7 +32,7 @@ const InstalledApp = ({app}) => {
                 </div>
                 <div>
               <form action="">
-                 <button className='btn bg-green-500 text-white mr-3' onClick={()=>handleUnstall(app.id)}>unstall</button>
+                 <button className='btn bg-green-500 text-white md:mr-3 mt-3 md:mt-0' onClick={()=>handleUnstall(app.id)}>unstall</button>
               </form>
            </div>
          </div>

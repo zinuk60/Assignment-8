@@ -44,7 +44,7 @@ const PageNotFound = () => {
             </div>
 
             <div  className='flex flex-col justify-center items-center h-[600px]'>
-            <img className='max-w-[400px] h-auto' src={errorImg} alt="Page Not Found" />
+            <img className='max-w-[340px] h-auto' src={errorImg} alt="Page Not Found" />
                <div className=" flex flex-col justify-center items-center ">
       <p className="font-bold text-[#001931] text-3xl mt-5 ">
            Oops, page not found!
